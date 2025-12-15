@@ -1,0 +1,142 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+
+.box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.box:nth-child(1) { background-color: #2a1e2f; } 
+.box:nth-child(2) { background-color: #1e2a2f; } 
+.box:nth-child(3) { background-color: #2a2a1e; } 
+
+.box:nth-child(1) label { color: #e44d26; }
+.box:nth-child(2) label { color: #264de4; }
+.box:nth-child(3) label { color: #f0db4f; }
+
+
+textarea {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    resize: vertical; 
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+
+textarea:focus {
+    background-color: #2c2c44;
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #4caf50;
+}
+
+
+#output {
+    flex: 1;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #252535;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #1e1e2f;
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #55557f;
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #8888aa;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        flex: unset;
+        height: 45vh;
+    }
+}
