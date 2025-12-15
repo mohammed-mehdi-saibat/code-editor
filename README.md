@@ -13,5 +13,5 @@ A lightweight, browser-based code editor built with **HTML**, **CSS**, and **Jav
 
 1. Clone this repository:
    ```bash
-   git clone <https://github.com/mohammed-mehdi-saibat/code-editor>
+   git clone https://github.com/mohammed-mehdi-saibat/code-editor
    ```
