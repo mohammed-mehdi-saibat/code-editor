@@ -15,3 +15,7 @@ A lightweight, browser-based code editor built with **HTML**, **CSS**, and **Jav
    ```bash
    git clone https://github.com/mohammed-mehdi-saibat/code-editor
    ```
+
+## Live Preview
+
+Check out the live version of the project here: [Code Editor Live Preview](https://mohammed-mehdi-saibat.github.io/code-editor/)
